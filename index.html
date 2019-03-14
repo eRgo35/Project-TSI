@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/ergo-framework-a-0.0.1.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link id="theme" rel="stylesheet" type="text/css" media="screen" href="css/blue.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
@@ -24,6 +25,18 @@
         <a href="/" id="head-logo">
             <h5><i class="fa fa-internet-explorer" aria-hidden="true"></i>Tworzenie Stron Internetowych</h5>
         </a>
+        <a id="empty"></a>
+        <div id="theme-wrapper">
+            <a id="head-logo" class="theme" onclick="themeSelect();">
+                <i class="fa fa-paint-brush"></i>
+            </a>
+            <div id="theme-change">
+                <div id="theme-button" style="background: #00b0ff" onclick="themeBlue();"><i id="theme-status" class="fa fa-check-circle-o" style="display: block; font-size: 1.9rem; text-align: center; margin-top: 2px;"></i></div>
+                <div id="theme-button" style="background: #66bb6a" onclick="themeGreen();"><i id="theme-status" class="fa fa-check-circle-o" style="display: none; font-size: 1.9rem; text-align: center; margin-top: 2px;"></i></div>
+                <div id="theme-button" style="background: #e53935" onclick="themeRed();"><i id="theme-status" class="fa fa-check-circle-o" style="display: none; font-size: 1.9rem; text-align: center; margin-top: 2px;"></i></div>
+                <div id="theme-button" style="background: #ffa000" onclick="themeYellow();"><i id="theme-status" class="fa fa-check-circle-o" style="display: none; font-size: 1.9rem; text-align: center; margin-top: 2px;"></i></div>
+            </div>
+        </div>
     </menu>
     <header>
 
@@ -33,6 +46,7 @@
     <div id="main">
         <nav>
             <ul>
+                <a id="navbar-link" class="active"></a>
                 <li>
                     <h4 onclick="dropHTML();">Podstawy HTML<i id="1" class="fa fa-sort-up"></i></h4>
                 </li>
@@ -57,8 +71,10 @@
                     <li><a id="navbar-link" href="#basn" onclick="location.reload();">Pseudoelementy - Baśń</a></li>
                     <li><a id="navbar-link" href="#selektor_elementu" onclick="location.reload();">Selektor Elementu</a></li>
                     <li><a id="navbar-link" href="#selektor_atrybutu" onclick="location.reload();">Selektor Atrybutu</a></li>
-                    <li><a id="navbar-link" href="#selektor_atrybutu_2" onclick="location.reload();">Selektor Atrybutu 2</a></li>
-                    <li><a id="navbar-link" href="#selektor_atrybutu_3" onclick="location.reload();">Selektor Atrybutu 3</a></li>
+                    <li><a id="navbar-link" href="#selektor_atrybutu_2" onclick="location.reload();">Selektor Atrybutu
+                            2</a></li>
+                    <li><a id="navbar-link" href="#selektor_atrybutu_3" onclick="location.reload();">Selektor Atrybutu
+                            3</a></li>
                 </div>
                 <li>
                     <h4 onclick="dropHTML5();">Strony HTML5<i id="3" class="fa fa-sort-up"></i></h4>
@@ -85,12 +101,25 @@
                     <h4 onclick="dropLINKS();">Linki<i id="6" class="fa fa-sort-up"></i></h4>
                 </li>
                 <div id="links-dropdown">
-                    <li><a class="extLinks" target="_BLANK" href="https://www.google.com"><j style="color: #4285F4;">G</j><j style="color: #DB4437;">o</j><j style="color: #F4B400;">o</j><j style="color: #4285F4;">g</j><j style="color: #0F9D58;">l</j><j style="color: #DB4437;">e</j></a></li>
-                    <li><a class="extLinks" target="_BLANK" href="http://zspm.pl"><j style="color: white; background: #00396b; border: 2px solid #00529b; border-radius: 5px;">ZSPM</j></a></li>
-                    <li><a class="extLinks" target="_BLANK" href="http://tsi-pai.cba.pl"><j style="color: yellow; background: linear-gradient(to bottom, gray, #cc66cc); border: 2px solid silver; border-radius: 5px;">TSI-PAI.CBA.PL</j></a></li>
+                    <li><a class="extLinks" target="_BLANK" href="https://www.google.com">
+                            <j style="color: #4285F4;">G</j>
+                            <j style="color: #DB4437;">o</j>
+                            <j style="color: #F4B400;">o</j>
+                            <j style="color: #4285F4;">g</j>
+                            <j style="color: #0F9D58;">l</j>
+                            <j style="color: #DB4437;">e</j>
+                        </a></li>
+                    <li><a class="extLinks" target="_BLANK" href="http://zspm.pl">
+                            <j style="color: white; background: #00396b; border: 2px solid #00529b; border-radius: 5px;">ZSPM</j>
+                        </a></li>
+                    <li><a class="extLinks" target="_BLANK" href="http://tsi-pai.cba.pl">
+                            <j style="color: yellow; background: linear-gradient(to bottom, gray, #cc66cc); border: 2px solid silver; border-radius: 5px;">TSI-PAI.CBA.PL</j>
+                        </a></li>
                     <li><a class="extLinks" target="_BLANK" href="https://michalczyz.ml">MICHALCZYZ.ML</a></li>
-                    <li><a class="extLinks" target="_BLANK" href="https://radio.michalczyz.ml">RADIO POLIGRAF<img src="/pictures/radio-Poligraf.png" style="height: 1rem; margin-left: 5px;"></a></li>
-                    <li><a class="extLinks" target="_BLANK" href="https://js-calc.cf">JS CALC<img src="/pictures/logo-Jscalc.png" style="height: 1rem; margin-left: 5px;"></a></li>
+                    <li><a class="extLinks" target="_BLANK" href="https://radio.michalczyz.ml">RADIO POLIGRAF<img src="/pictures/radio-Poligraf.png"
+                                style="height: 1rem; margin-left: 5px;"></a></li>
+                    <li><a class="extLinks" target="_BLANK" href="https://js-calc.cf">JS CALC<img src="/pictures/logo-Jscalc.png"
+                                style="height: 1rem; margin-left: 5px;"></a></li>
                 </div>
             </ul>
         </nav>
@@ -102,7 +131,8 @@
         <div id="copy">
             <span>Copyright&copy; 2018-2019 Michał Czyż</span><br>
             <span>Kopiowanie kodu źródłowego HTML/CSS/JS w całości lub fragmentach bez zgody autora zabronione.</span><br>
-            <span>Stara Strona wciąż dostępna pod tym linkiem, lecz nie będzie aktualizowana: <a style="color: white !important;" href="/legacy">Link</a>.</span>
+            <span>Stara Strona wciąż dostępna pod tym linkiem, lecz nie będzie aktualizowana: <a style="color: white !important;"
+                    href="/legacy">Link</a>.</span>
         </div>
     </footer>
 </body>

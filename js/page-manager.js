@@ -20,9 +20,7 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
     }
     else if (hash == 'zdjecia') {
         /* Load content */
@@ -32,9 +30,7 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
     }
     else if (hash == 'tabela_spr') {
         /* Load content */
@@ -44,9 +40,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     else if (hash == 'listy_spr') {
         /* Load content */
@@ -56,9 +51,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     else if (hash == 'formularz_spr') {
         /* Load content */
@@ -68,9 +62,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
 
     else if (hash == 'wlasciwosci_css') {
@@ -81,9 +74,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     else if (hash == 'klasa_iden') {
         /* Load content */
@@ -93,9 +85,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     else if (hash == 'tabele_css') {
         /* Load content */
@@ -105,9 +96,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     else if (hash == 'pseudoelementy') {
         /* Load content */
@@ -117,9 +107,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     else if (hash == 'basn') {
         /* Load content */
@@ -129,9 +118,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     else if (hash == 'selektor_elementu') {
         /* Load content */
@@ -141,9 +129,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     else if (hash == 'selektor_atrybutu') {
         /* Load content */
@@ -153,9 +140,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     else if (hash == 'selektor_atrybutu_2') {
         /* Load content */
@@ -165,9 +151,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     else if (hash == 'selektor_atrybutu_3') {
         /* Load content */
@@ -177,9 +162,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
 
     else if (hash == 'multimedia') {
@@ -189,9 +173,8 @@ $(document).ready(function () {
         /* Remove Active Class */
         $('#navbar-link').removeClass('active');
         /* Add active class for current menu item */
-        $(function () {
-            $('#navbar-link[href="#' + hash + '"]').addClass('active');
-        });
+        $('#navbar-link[href="#' + hash + '"]').addClass('active');
+
     }
     /* For empty or wrong hash - load default page */
     else if (hash == '') {
