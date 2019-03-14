@@ -4,6 +4,15 @@
 */
 
 @media (min-width: 1281px) {
+    ::selection {
+        background: var(--s-light);
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: var(--s-light);
+        /* Gecko Browsers */
+    }
 
     * {
         box-sizing: border-box;
@@ -15,7 +24,8 @@
         background: var(--background);
     }
 
-    .mobile-sidebar, .mobile-sidebar i {
+    .mobile-sidebar,
+    .mobile-sidebar i {
         display: none;
     }
 
@@ -271,6 +281,16 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
+    ::selection {
+        background: var(--s-light);
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: var(--s-light);
+        /* Gecko Browsers */
+    }
+
     * {
         box-sizing: border-box;
         margin: 0;
@@ -281,7 +301,8 @@
         background: var(--background);
     }
 
-    .mobile-sidebar, .mobile-sidebar i {
+    .mobile-sidebar,
+    .mobile-sidebar i {
         display: none;
     }
 
@@ -532,6 +553,16 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    ::selection {
+        background: var(--s-light);
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: var(--s-light);
+        /* Gecko Browsers */
+    }
 
     * {
         box-sizing: border-box;
@@ -786,6 +817,16 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
+    ::selection {
+        background: var(--s-light);
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: var(--s-light);
+        /* Gecko Browsers */
+    }
+
     * {
         box-sizing: border-box;
         margin: 0;
@@ -1038,6 +1079,16 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+
+    ::selection {
+        background: var(--s-light);
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: var(--s-light);
+        /* Gecko Browsers */
+    }
 
     * {
         box-sizing: border-box;
@@ -1292,6 +1343,16 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+    ::selection {
+        background: var(--s-light);
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: var(--s-light);
+        /* Gecko Browsers */
+    }
 
     * {
         box-sizing: border-box;
