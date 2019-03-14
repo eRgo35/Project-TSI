@@ -88,3 +88,17 @@ function themeYellow() {
     document.getElementById("theme-change").style.display = "none";
     document.cookie = "theme=yellow; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 }
+
+/* Mobile Functions */
+
+function mobileSidebar() {
+    $("#fader").fadeIn( "slow" );
+    $("nav ul").animate({
+        left: 0 });
+}
+
+function mobileSidebarClose() {
+    $("nav ul").animate({
+        left: "-240px" });
+    $("#fader").fadeOut( "slow" );
+}

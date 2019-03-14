@@ -40,6 +40,8 @@
     </menu>
     <header>
 
+        <div class="mobile-sidebar" onclick="mobileSidebar();"><i class="fa fa-navicon" style="color: white !important;"></i></div>
+
         <span id="page-title">Page Title</span>
 
     </header>
@@ -123,8 +125,9 @@
                 </div>
             </ul>
         </nav>
+        <div id="fader" onclick="mobileSidebarClose();"></div>
         <div id="content">
-            <iframe id="subLoad" scrolling="no" onload="resizeIframe(this)" frameborder="0" src="/content/main.html"></iframe>
+            <iframe id="subLoad" onload="resizeIframe(this)" src="/content/main.html"></iframe>
         </div>
     </div>
     <footer>
