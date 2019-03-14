@@ -206,21 +206,3 @@ $(document).ready(function () {
     }
     
 });
-
-function change_content() {
-
-    var page = $(this).attr('href').substring(1);
-
-    if (page == 'nauczyciele' || page == 'zdjecia' || page == 'tabela' || page == 'listy' || page == 'formularz' || page == 'tabela_spr' || page == 'listy_spr' || page == 'formularz_spr') {
-        $("#subLoad").attr("src", "/content/html/" + page + ".html");
-        $('#navbar-link').removeClass('active');
-        $(this).addClass('active');
-    }
-    else {
-        $("#subLoad").attr("src", "/content/main.html");
-        $('#navbar-link').removeClass('active');
-        $(this).addClass('active');
-    }
-}
-
-$('#navbar-link').click(change_content());
