@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:title" content="Tworzenie Stron Internetowych"/>
-    <meta property="og:description" content="Strona ze wszystkimi pracami stworzonymi na przedmiocie TSI"/>
+    <meta property="og:title" content="Tworzenie Stron Internetowych" />
+    <meta property="og:description" content="Strona ze wszystkimi pracami stworzonymi na przedmiocie TSI" />
     <meta property="og:image" content="preview.png">
     <meta property="og:url" content="https://tsi.michalczyz.ml">
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="website" />
     <title>Tworzenie Stron Internetowych</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/ergo-framework-a-0.0.1.css">
@@ -20,6 +20,12 @@
     <script>
         function resizeIframe(obj) {
             obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
+    <script type="text/javascript">
+        if (navigator.appName.indexOf("Internet Explorer") != -1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./)) {
+            //This user uses Internet Explorer
+            window.location = "/legacy/";
         }
     </script>
     <script src="js/page-manager.js"></script>
@@ -36,10 +42,14 @@
                 <i class="fa fa-paint-brush"></i>
             </a>
             <div id="theme-change">
-                <div id="theme-button" style="background: #00b0ff" onclick="themeBlue();"><i id="theme-status" class="Blue fa fa-check-circle-o" style="display: block; font-size: 1.9rem; margin-top: 2.5px;"></i></div>
-                <div id="theme-button" style="background: #66bb6a" onclick="themeGreen();"><i id="theme-status" class="Green fa fa-check-circle-o" style="display: none; font-size: 1.9rem; margin-top: 2.5px;"></i></div>
-                <div id="theme-button" style="background: #e53935" onclick="themeRed();"><i id="theme-status" class="Red fa fa-check-circle-o" style="display: none; font-size: 1.9rem; margin-top: 2.5px;"></i></div>
-                <div id="theme-button" style="background: #ffa000" onclick="themeYellow();"><i id="theme-status" class="Yellow fa fa-check-circle-o" style="display: none; font-size: 1.9rem; margin-top: 2.5px;"></i></div>
+                <div id="theme-button" style="background: #00b0ff" onclick="themeBlue();"><i id="theme-status" class="Blue fa fa-check-circle-o"
+                        style="display: block; font-size: 1.9rem; margin-top: 2.5px;"></i></div>
+                <div id="theme-button" style="background: #66bb6a" onclick="themeGreen();"><i id="theme-status" class="Green fa fa-check-circle-o"
+                        style="display: none; font-size: 1.9rem; margin-top: 2.5px;"></i></div>
+                <div id="theme-button" style="background: #e53935" onclick="themeRed();"><i id="theme-status" class="Red fa fa-check-circle-o"
+                        style="display: none; font-size: 1.9rem; margin-top: 2.5px;"></i></div>
+                <div id="theme-button" style="background: #ffa000" onclick="themeYellow();"><i id="theme-status" class="Yellow fa fa-check-circle-o"
+                        style="display: none; font-size: 1.9rem; margin-top: 2.5px;"></i></div>
             </div>
         </div>
     </menu>
@@ -90,6 +100,7 @@
                     <li><a target="_BLANK" id="navbar-link" href="/content/html5/uklad1/index.html">Układ 1</a></li>
                     <li><a target="_BLANK" id="navbar-link" href="/content/html5/uklad2/uklad2.html">Układ 2</a></li>
                     <li><a target="_BLANK" id="navbar-link" href="/content/html5/zwierzeta/index.html">Zwierzęta</a></li>
+					<li><a target="_BLANK" id="navbar-link" href="/content/html5/galeria/index.html">Galeria</a></li>
                 </div>
                 <li>
                     <h4 onclick="dropDOCS();">Dokumenty<i id="4" class="fa fa-sort-up"></i></h4>
@@ -97,6 +108,7 @@
                 <div id="docs-dropdown">
                     <li><a href="/content/docs/lista.docx" download>Lista - Word</a></li>
                     <li><a target="_BLANK" href="/content/docs/lista.pdf">Lista - PDF</a></li>
+                    <li><a href="/files/Budowa-Strony-HTML5.zip" download>Budowa Strony HTML5</a></li>
                 </div>
                 <li>
                     <h4 onclick="dropMEDIA();">Multimedia HTML5<i id="5" class="fa fa-sort-up"></i></h4>
