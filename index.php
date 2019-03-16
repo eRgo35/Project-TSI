@@ -11,15 +11,33 @@
     <meta property="og:type" content="website" />
     <title>Tworzenie Stron Internetowych</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/ergo-framework-a-0.0.1.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/eRgo-Framework-a.1.0.0-min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <link id="theme" rel="stylesheet" type="text/css" media="screen" href="css/blue.css">
+    <?php
+        $theme = $_COOKIE['theme'];
+
+        if( $theme == "blue" ) {
+            echo '<link id="theme" rel="stylesheet" type="text/css" media="screen" href="css/blue.css">';
+        }
+        else if ( $theme == "green" ) {
+            echo '<link id="theme" rel="stylesheet" type="text/css" media="screen" href="css/green.css">';
+        }
+        else if ( $theme == "red" ) {
+            echo '<link id="theme" rel="stylesheet" type="text/css" media="screen" href="css/red.css">';
+        }
+        else if ( $theme == "yellow" ) {
+            echo '<link id="theme" rel="stylesheet" type="text/css" media="screen" href="css/yellow.css">';
+        }
+        else {
+            echo '<link id="theme" rel="stylesheet" type="text/css" media="screen" href="css/blue.css">';
+        }
+    ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 10 + 'px';
         }
     </script>
     <script type="text/javascript">
@@ -68,39 +86,39 @@
                     <h4 onclick="dropHTML();">Podstawy HTML<i id="1" class="fa fa-sort-up"></i></h4>
                 </li>
                 <div id="html-dropdown">
-                    <li><a id="navbar-link" href="#nauczyciele" onclick="location.reload();">Nauczyciele</a></li>
-                    <li><a id="navbar-link" href="#zdjecia" onclick="location.reload();">Zdjęcia</a></li>
-                    <li><a id="navbar-link" href="#tabela" onclick="location.reload();">Tabela</a></li>
-                    <li><a id="navbar-link" href="#listy" onclick="location.reload();">Listy</a></li>
-                    <li><a id="navbar-link" href="#formularz" onclick="location.reload();">Formularz</a></li>
-                    <li><a id="navbar-link" href="#tabela_spr" onclick="location.reload();">Tabela Zaliczenie</a></li>
-                    <li><a id="navbar-link" href="#listy_spr" onclick="location.reload();">Listy Zaliczenie</a></li>
-                    <li><a id="navbar-link" href="#formularz_spr" onclick="location.reload();">Formularz Zaliczenie</a></li>
+                    <li><a class="navbar-links" href="#nauczyciele">Nauczyciele</a></li>
+                    <li><a class="navbar-links" href="#zdjecia">Zdjęcia</a></li>
+                    <li><a class="navbar-links" href="#tabela">Tabela</a></li>
+                    <li><a class="navbar-links" href="#listy">Listy</a></li>
+                    <li><a class="navbar-links" href="#formularz">Formularz</a></li>
+                    <li><a class="navbar-links" href="#tabela_spr">Tabela Zaliczenie</a></li>
+                    <li><a class="navbar-links" href="#listy_spr">Listy Zaliczenie</a></li>
+                    <li><a class="navbar-links" href="#formularz_spr">Formularz Zaliczenie</a></li>
                 </div>
                 <li>
                     <h4 onclick="dropCSS();">Podstawy CSS<i id="2" class="fa fa-sort-up"></i></h4>
                 </li>
                 <div id="css-dropdown">
-                    <li><a id="navbar-link" href="#wlasciwosci_css" onclick="location.reload();">Właściwości CSS</a></li>
-                    <li><a id="navbar-link" href="#klasa_iden" onclick="location.reload();">Klasa i Identyfikator</a></li>
-                    <li><a id="navbar-link" href="#tabele_css" onclick="location.reload();">Tabele CSS</a></li>
-                    <li><a id="navbar-link" href="#pseudoelementy" onclick="location.reload();">Pseudoelementy</a></li>
-                    <li><a id="navbar-link" href="#basn" onclick="location.reload();">Pseudoelementy - Baśń</a></li>
-                    <li><a id="navbar-link" href="#selektor_elementu" onclick="location.reload();">Selektor Elementu</a></li>
-                    <li><a id="navbar-link" href="#selektor_atrybutu" onclick="location.reload();">Selektor Atrybutu</a></li>
-                    <li><a id="navbar-link" href="#selektor_atrybutu_2" onclick="location.reload();">Selektor Atrybutu
+                    <li><a class="navbar-links" href="#wlasciwosci_css">Właściwości CSS</a></li>
+                    <li><a class="navbar-links" href="#klasa_iden">Klasa i Identyfikator</a></li>
+                    <li><a class="navbar-links" href="#tabele_css">Tabele CSS</a></li>
+                    <li><a class="navbar-links" href="#pseudoelementy">Pseudoelementy</a></li>
+                    <li><a class="navbar-links" href="#basn">Pseudoelementy - Baśń</a></li>
+                    <li><a class="navbar-links" href="#selektor_elementu">Selektor Elementu</a></li>
+                    <li><a class="navbar-links" href="#selektor_atrybutu">Selektor Atrybutu</a></li>
+                    <li><a class="navbar-links" href="#selektor_atrybutu_2">Selektor Atrybutu
                             2</a></li>
-                    <li><a id="navbar-link" href="#selektor_atrybutu_3" onclick="location.reload();">Selektor Atrybutu
+                    <li><a class="navbar-links" href="#selektor_atrybutu_3">Selektor Atrybutu
                             3</a></li>
                 </div>
                 <li>
                     <h4 onclick="dropHTML5();">Strony HTML5<i id="3" class="fa fa-sort-up"></i></h4>
                 </li>
                 <div id="html5-dropdown">
-                    <li><a target="_BLANK" id="navbar-link" href="/content/html5/uklad1/index.html">Układ 1</a></li>
-                    <li><a target="_BLANK" id="navbar-link" href="/content/html5/uklad2/uklad2.html">Układ 2</a></li>
-                    <li><a target="_BLANK" id="navbar-link" href="/content/html5/zwierzeta/index.html">Zwierzęta</a></li>
-					<li><a target="_BLANK" id="navbar-link" href="/content/html5/galeria/index.html">Galeria</a></li>
+                    <li><a target="_BLANK" class="navbar-links" href="/content/html5/uklad1/index.html">Układ 1</a></li>
+                    <li><a target="_BLANK" class="navbar-links" href="/content/html5/uklad2/uklad2.html">Układ 2</a></li>
+                    <li><a target="_BLANK" class="navbar-links" href="/content/html5/zwierzeta/index.html">Zwierzęta</a></li>
+					<li><a target="_BLANK" class="navbar-links" href="/content/html5/galeria/index.html">Galeria</a></li>
                 </div>
                 <li>
                     <h4 onclick="dropDOCS();">Dokumenty<i id="4" class="fa fa-sort-up"></i></h4>
@@ -114,7 +132,7 @@
                     <h4 onclick="dropMEDIA();">Multimedia HTML5<i id="5" class="fa fa-sort-up"></i></h4>
                 </li>
                 <div id="media-dropdown">
-                    <li><a id="navbar-link" href="#multimedia" onclick="location.reload();">Multimedia</a></li>
+                    <li><a class="navbar-links" href="#multimedia">Multimedia</a></li>
                 </div>
                 <li>
                     <h4 onclick="dropLINKS();">Linki<i id="6" class="fa fa-sort-up"></i></h4>
@@ -146,6 +164,7 @@
         <div id="content">
             <iframe id="subLoad" onload="resizeIframe(this)" src="/content/main.html"></iframe>
         </div>
+        <script src="js/link-manager.js"></script>
     </div>
     <footer>
         <div id="copy">

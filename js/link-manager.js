@@ -1,12 +1,8 @@
-/* Page Manager */
-
-/* Get all menu links */
-var links = $("#navbar-link");
-
-$(document).ready(function () {
+function loadContent() {
 
     /* #hash link variable declaration */
-    var hash = window.location.hash.substring(1);
+
+    hash = $(this).attr('href').substr(1);
 
     /* Getting hashes for main menu */
     if (hash == 'nauczyciele' ||
@@ -171,4 +167,6 @@ $(document).ready(function () {
         $("#page-title").html("Strona Główna");
     }
 
-});
+}
+
+$('.navbar-links').click(loadContent);
