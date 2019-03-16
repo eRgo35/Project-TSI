@@ -265,6 +265,7 @@
     }
 
     #theme-button {
+        position: relative;
         cursor: pointer;
         width: 35px;
         height: 35px;
@@ -272,6 +273,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #theme-status {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
     #fader {
@@ -348,9 +357,13 @@
 
     .mobile-sidebar {
         font-size: 30px;
-        margin-top: 5px;
+        margin-top: 0;
         margin-right: 20px;
         margin-left: -10px;
+        color: var(--s-text);
+    }
+
+    .mobile-sidebar i {
         color: var(--s-text);
     }
 
@@ -382,6 +395,18 @@
         width: 240px;
         overflow: auto;
         z-index: 20;
+    }
+
+    ul::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    ul::-webkit-scrollbar-track {
+        background: var(--scrolltrack);
+    }
+
+    ul::-webkit-scrollbar-thumb {
+        background: var(--scrollthumb);
     }
 
     nav li {
@@ -474,7 +499,7 @@
     }
 
     #content {
-        padding: 30px;
+        padding: 0;
     }
 
     iframe {
@@ -546,6 +571,7 @@
     }
 
     #theme-button {
+        position: relative;
         cursor: pointer;
         width: 35px;
         height: 35px;
@@ -553,6 +579,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #theme-status {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
 }

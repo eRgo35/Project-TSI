@@ -73,7 +73,7 @@
     </menu>
     <header>
 
-        <div class="mobile-sidebar" onclick="mobileSidebar();"><i class="fa fa-navicon" style="color: white !important;"></i></div>
+        <div class="mobile-sidebar" onclick="mobileSidebar();"><i class="fa fa-navicon"></i></div>
 
         <span id="page-title">Page Title</span>
 
