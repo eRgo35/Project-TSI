@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Selektor Elementu</title>
+		<style>
+			body {
+				background: darkslategray;
+			}
+			h2, h3 {
+        color: yellow;
+        margin: 0;
+			}
+			h2 i {
+        color: white;
+        margin: 0;
+			}
+			h3 > u {
+				color: lime;
+				font-size: 18pt;
+				font-weight: normal;
+			}
+			u + i {
+				color: orange;
+				font-weight: normal;
+				font-size: 16pt;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Ten tekst jest <u><i>Selektorem Potomka.</i></u> Zdefiniuj to w arkuszu stylów</h2>
+		<br />
+		<h3>Ten tekst jest <u><i>Selektorem Potomka.</i></u> Zdefiniuj to w arkuszu stylów</h3>
+		<br />
+		<h3>Ten tekst jest <u>Selektorem Potomka.</u> <i>Zdefiniuj to w arkuszu stylów</i></h3>
+		<br>
+		<br>
+	</body>
+</html>

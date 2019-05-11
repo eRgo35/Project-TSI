@@ -1,0 +1,159 @@
+﻿<!--# ------------------------ #-->
+<!--#      Copyright® 2018     #-->
+<!--#        Michał Czyż       #-->
+<!--#  Unauthorised Copying or #-->
+<!--#  	Editing is prohibited  #-->
+<!--# ------------------------ #-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Menu</title>
+</head>
+<style>
+    body {
+        background: silver;
+    }
+
+    div#wrapper {
+        text-align: center;
+    }
+
+    span.menu {
+        font-size: 16pt;
+        font-family: monospace;
+        text-align: center;
+    }
+
+    span {
+        font-size: 14pt;
+        font-family: cursive;
+        text-align: center;
+    }
+
+    a {
+        color: black;
+        font-family: monospace;
+        font-size: 12pt;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: darkblue;
+    }
+
+    * {
+        transition: all 0.4s linear;
+    }
+
+    #top,
+    #bottom,
+    #left,
+    #right {
+        background: #a5ebff;
+        position: fixed;
+    }
+
+    #left,
+    #right {
+        top: 0;
+        bottom: 0;
+        width: 5px;
+    }
+
+    #left {
+        left: 0;
+        background: lightgray;
+    }
+
+    #right {
+        right: 0;
+        background: rgb(138, 138, 138);
+    }
+
+    #top,
+    #bottom {
+        left: 0;
+        right: 0;
+        height: 5px;
+    }
+
+    #top {
+        top: 0;
+        background: lightgray;
+    }
+
+    #bottom {
+        bottom: 0;
+        background: rgb(138, 138, 138);
+    }
+	-webkit-::scrollbar {
+		display: none;
+		width: 0;
+	}
+</style>
+
+<body>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
+    <div id="wrapper">
+        <span class="menu">.: MENU :.</span>
+        <br />
+        <hr />
+        <br />
+		<span>-Podstawy HTML-</span>
+		<br />
+		<a target="tresc" href="files/Budowa-Strony-HTML5.zip" download>Budowa Strony HTML5</a><br />
+		<br />
+        <span>-Podstawy HTML-</span>
+        <br />
+        <a target="tresc" href="str_glowna.html">Strona Główna</a><br />
+        <a target="tresc" href="nauczyciele.html">Nauczyciele</a><br />
+        <a target="tresc" href="zdjecia.html">Zdjęcia</a><br />
+        <a target="tresc" href="tabela.html">Tabela</a><br />
+        <a target="tresc" href="listy.html">Listy</a><br />
+        <a target="tresc" href="formularz.html">Formularz</a><br />
+        <a target="tresc" href="tabela_spr.html">Tabela Zaliczenie</a><br />
+        <a target="tresc" href="listy_spr.html">Listy Zaliczenie</a><br />
+        <a target="tresc" href="formularz_spr.html">Formularz Zaliczenie</a><br />
+        <br />
+        <span>-Podstawy CSS-</span>
+        <br />
+        <a target="tresc" href="wlasciwosci_css.html">Właściwości CSS</a><br />
+        <a target="tresc" href="klasa_iden.html">Klasa i Identyfikator</a><br />
+        <a target="tresc" href="tabele_css.html">Tabele CSS</a><br />
+		<a target="tresc" href="pseudoelementy.html">Pseudoelementy</a><br />
+        <a target="tresc" href="basn.html">Pseudoelementy - Baśń</a><br />
+        <a target="tresc" href="selektor_elementu.html">Selektor Elementu</a><br />
+        <a target="tresc" href="selektor_atrybutu.html">Selektor Atrybutu</a><br />
+        <a target="tresc" href="selektor_atrybutu_2.html">Selektor Atrybutu 2</a><br />
+        <a target="tresc" href="selektor_atrybutu_3.html">Selektor Atrybutu 3</a><br />
+        <br />
+        <span>-Strony HTML5-</span>
+        <br />
+        <a target="_blank" href="divy/Pierwsza-strona/uklad1/index.html">Układ 1</a><br />
+        <a target="_blank" href="divy/Pierwsza-strona/uklad2/uklad2.html">Układ 2</a><br />
+        <a target="_blank" href="divy/Opisy-zwierzat/index.html">Zwierzęta</a><br />
+        <br />
+        <span>-Dokumenty-</span>
+        <br />
+        <a target="tresc" href="doc/lista.docx" download>Lista - Word</a><br />
+        <a target="tresc" href="doc/lista.pdf">Lista - PDF</a><br />
+        <br />
+        <span>-Multimedia HTML5-</span>
+        <br />
+        <a target="tresc" href="multimedia.html">Multimedia</a><br />
+        <br />
+        <span>-Linki-</span>
+        <br />
+        <br />
+        <a href="http://www.google.com" target="_blank"><img src="foty/google_logo.png" width="150px" /></a><br />
+        <a href="http://zspm.pl" target="_blank"><img src="foty/poligraf_logo.PNG" width="150px" /></a><br />
+        <a href="http://tsi-pai.cba.pl" target="_blank"><img src="foty/tsi_logo.PNG" width="150px" /></a><br />
+    </div>
+</body>
+
+</html>
