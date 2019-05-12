@@ -27,6 +27,7 @@ import { SelektorAtrybutu2Component } from './static/css/selektor-atrybutu2/sele
 import { SelektorAtrybutu3Component } from './static/css/selektor-atrybutu3/selektor-atrybutu3.component';
 import { MultimediaComponent } from './static/multimedia/multimedia.component';
 import { titleService } from './title.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -57,9 +58,12 @@ import { titleService } from './title.service';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
-  providers: [titleService],
+  providers: [
+    titleService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
