@@ -26,4 +26,5 @@ export class MainComponent implements OnInit {
     {name: 'Wersja 3.0.0 Pre-Release 1', url: '/'}
   ];
 
+  selected = '';
 }
