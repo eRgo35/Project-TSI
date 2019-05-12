@@ -43,7 +43,7 @@
     <script type="text/javascript">
         if (navigator.appName.indexOf("Internet Explorer") != -1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./)) {
             //This user uses Internet Explorer
-            window.location = "/legacy/";
+            window.location = "legacy/";
         }
     </script>
     <script src="js/page-manager.js"></script>
@@ -51,7 +51,7 @@
 
 <body>
     <menu>
-        <a href="/" id="head-logo">
+        <a href="https://tsi.michalczyz.ml" id="head-logo">
             <h5><i class="fa fa-internet-explorer" aria-hidden="true"></i>Tworzenie Stron Internetowych</h5>
         </a>
         <a id="empty"></a>
@@ -75,7 +75,7 @@
 
         <div class="mobile-sidebar" onclick="mobileSidebar();"><i class="fa fa-navicon"></i></div>
 
-        <span id="page-title">Page Title</span>
+        <span id="page-title">Strona Główna</span>
 
     </header>
     <div id="main">
@@ -115,21 +115,21 @@
                     <h4 onclick="dropHTML5();">Strony HTML5<i id="3" class="fa fa-sort-up"></i></h4>
                 </li>
                 <div id="html5-dropdown">
-                    <li><a target="_BLANK" class="navbar-links" href="/content/html5/uklad1/index.html">Układ 1</a></li>
-                    <li><a target="_BLANK" class="navbar-links" href="/content/html5/uklad2/uklad2.html">Układ 2</a></li>
-                    <li><a target="_BLANK" class="navbar-links" href="/content/html5/zwierzeta/index.html">Zwierzęta</a></li>
-					<li><a target="_BLANK" class="navbar-links" href="/content/html5/galeria/index.html">Galeria</a></li>
-                    <li><a target="_BLANK" class="navbar-links" href="/content/html5/menu/index.html">Menu</a></li>
-                    <li><a target="_BLANK" class="navbar-links" href="/content/html5/pozycjonowanie/index.html">Pozycjonowanie</a></li>
-                    <li><a target="_BLANK" class="navbar-links" href="/content/html5/pozycjonowanie1/index.html">Pozycjonowanie 1</a></li>
-                    <li><a target="_BLANK" class="navbar-links" href="/content/html5/pozycjonowanie2/index.html">Pozycjonowanie 2</a></li>
+                    <li><a target="_BLANK" class="navbar-links" href="./content/html5/uklad1/index.html">Układ 1</a></li>
+                    <li><a target="_BLANK" class="navbar-links" href="./content/html5/uklad2/uklad2.html">Układ 2</a></li>
+                    <li><a target="_BLANK" class="navbar-links" href="./content/html5/zwierzeta/index.html">Zwierzęta</a></li>
+					<li><a target="_BLANK" class="navbar-links" href="./content/html5/galeria/index.html">Galeria</a></li>
+                    <li><a target="_BLANK" class="navbar-links" href="./content/html5/menu/index.html">Menu</a></li>
+                    <li><a target="_BLANK" class="navbar-links" href="./content/html5../pozycjonowanie/index.html">Pozycjonowanie</a></li>
+                    <li><a target="_BLANK" class="navbar-links" href="./content/html5../pozycjonowanie1/index.html">Pozycjonowanie 1</a></li>
+                    <li><a target="_BLANK" class="navbar-links" href="./content/html5../pozycjonowanie2/index.html">Pozycjonowanie 2</a></li>
                 </div>
                 <li>
                     <h4 onclick="dropDOCS();">Dokumenty<i id="4" class="fa fa-sort-up"></i></h4>
                 </li>
                 <div id="docs-dropdown">
-                    <li><a href="/content/docs/lista.docx" download>Lista - Word</a></li>
-                    <li><a target="_BLANK" href="/content/docs/lista.pdf">Lista - PDF</a></li>
+                    <li><a href="./content/docs/lista.docx" download>Lista - Word</a></li>
+                    <li><a target="_BLANK" href="./content/docs/lista.pdf">Lista - PDF</a></li>
                     <li><a href="/files/Budowa-Strony-HTML5.zip" download>Budowa Strony HTML5</a></li>
                 </div>
                 <li>
@@ -157,16 +157,16 @@
                             <j style="color: yellow; background: linear-gradient(to bottom, gray, #cc66cc); border: 2px solid silver; border-radius: 5px;">TSI-PAI.CBA.PL</j>
                         </a></li>
                     <li><a class="extLinks" target="_BLANK" href="https://michalczyz.ml">MICHALCZYZ.ML</a></li>
-                    <li><a class="extLinks" target="_BLANK" href="https://radio.michalczyz.ml">RADIO POLIGRAF<img src="/pictures/radio-Poligraf.png"
+                    <li><a class="extLinks" target="_BLANK" href="https://radio.michalczyz.ml">RADIO POLIGRAF<img src="../pictures/radio-Poligraf.png"
                                 style="height: 1rem; margin-left: 5px;"></a></li>
-                    <li><a class="extLinks" target="_BLANK" href="https://js-calc.cf">JS CALC<img src="/pictures/logo-Jscalc.png"
+                    <li><a class="extLinks" target="_BLANK" href="https://js-calc.cf">JS CALC<img src="../pictures/logo-Jscalc.png"
                                 style="height: 1rem; margin-left: 5px;"></a></li>
                 </div>
             </ul>
         </nav>
         <div id="fader" onclick="mobileSidebarClose();"></div>
         <div id="content">
-            <iframe id="subLoad" onload="resizeIframe(this)" src="/content/main.html"></iframe>
+            <iframe id="subLoad" onload="resizeIframe(this)" src="./content/main.html"></iframe>
         </div>
         <script src="js/link-manager.js"></script>
     </div>
@@ -175,7 +175,7 @@
             <span>Copyright&copy; 2018-2019 Michał Czyż</span><br>
             <span>Kopiowanie kodu źródłowego HTML/CSS/JS w całości lub fragmentach bez zgody autora zabronione.</span><br>
             <span>Stara Strona wciąż dostępna pod tym linkiem, lecz nie będzie aktualizowana: <a style="color: white !important;"
-                    href="/legacy">Link</a>.</span>
+                    href="legacy/">Link</a>.</span>
         </div>
     </footer>
 </body>
