@@ -19,13 +19,68 @@
     <div>
         <h3>Linki</h3>
         <div fxLayoutAlign="center center">
-            <mat-chip-list>
-                <a style="text-decoration: none;" href="https://www.google.com" target="_BLANK"><mat-chip><img src="../../content/pictures/google.png" width="20px">&nbsp;&nbsp;Google</mat-chip></a>
-                <a style="text-decoration: none;" href="http://zspm.pl" target="_BLANK"><mat-chip><img src="../../content/pictures/zspm.png" width="20px">&nbsp;&nbsp;ZSPM</mat-chip></a>
-                <a style="text-decoration: none;" href="http://tsi-pai.cba.pl" target="_BLANK"><mat-chip><mat-icon>web</mat-icon>&nbsp;&nbsp;TSI-PAI.CBA.PL</mat-chip></a>
-                <a style="text-decoration: none;" href="https://michalczyz.ml" target="_BLANK"><mat-chip><img src="../../content/pictures/mike.jpg" width="20px" style="border-radius: 50%;">&nbsp;&nbsp;Michał Czyż</mat-chip></a>
-                <a style="text-decoration: none;" href="https://radio-poligraf.firebaseapp.com" target="_BLANK"><mat-chip><mat-icon>radio</mat-icon>&nbsp;&nbsp;Radio Poligraf</mat-chip></a>
+            <mat-chip-list fxHide.lt-md>
+                <a style="text-decoration: none;" href="https://www.google.com" target="_BLANK">
+                    <mat-chip style="cursor: pointer"><img src="../../content/pictures/google.png"
+                            width="20px">&nbsp;&nbsp;Google</mat-chip>
+                </a>
+                <a style="text-decoration: none;" href="http://zspm.pl" target="_BLANK">
+                    <mat-chip style="cursor: pointer"><img src="../../content/pictures/zspm.png"
+                            width="20px">&nbsp;&nbsp;ZSPM</mat-chip>
+                </a>
+                <a style="text-decoration: none;" href="http://tsi-pai.cba.pl" target="_BLANK">
+                    <mat-chip style="cursor: pointer">
+                        <mat-icon>web</mat-icon>&nbsp;&nbsp;TSI-PAI.CBA.PL
+                    </mat-chip>
+                </a>
+                <a style="text-decoration: none;" href="https://michalczyz.ml" target="_BLANK">
+                    <mat-chip style="cursor: pointer"><img src="../../content/pictures/mike.jpg" width="20px"
+                            style="border-radius: 50%;">&nbsp;&nbsp;Michał Czyż</mat-chip>
+                </a>
+                <a style="text-decoration: none;" href="https://radio-poligraf.firebaseapp.com" target="_BLANK">
+                    <mat-chip style="cursor: pointer">
+                        <mat-icon>radio</mat-icon>&nbsp;&nbsp;Radio Poligraf
+                    </mat-chip>
+                </a>
             </mat-chip-list>
+        </div>
+        <div fxLayoutAlign="center center">
+                <mat-chip-list fxHide.gt-xs>
+                    <a style="text-decoration: none;" href="https://www.google.com" target="_BLANK">
+                        <mat-chip style="cursor: pointer"><img src="../../content/pictures/google.png"
+                                width="20px"></mat-chip>
+                    </a>
+                    <a style="text-decoration: none;" href="http://zspm.pl" target="_BLANK">
+                        <mat-chip style="cursor: pointer"><img src="../../content/pictures/zspm.png"
+                                width="20px"></mat-chip>
+                    </a>
+                    <a style="text-decoration: none;" href="http://tsi-pai.cba.pl" target="_BLANK">
+                        <mat-chip style="cursor: pointer">
+                            <mat-icon>web</mat-icon></mat-chip>
+                    </a>
+                    <a style="text-decoration: none;" href="https://michalczyz.ml" target="_BLANK">
+                        <mat-chip style="cursor: pointer"><img src="../../content/pictures/mike.jpg" width="20px"
+                                style="border-radius: 50%;"></mat-chip>
+                    </a>
+                    <a style="text-decoration: none;" href="https://radio-poligraf.firebaseapp.com" target="_BLANK">
+                        <mat-chip style="cursor: pointer">
+                            <mat-icon>radio</mat-icon></mat-chip>
+                    </a>
+                </mat-chip-list>
+            </div>
+    </div>
+    <div>
+        <h3>Michael's Time Machine&trade;</h3>
+        <div fxLayoutAlign="center center" fxLayoutGap="8px">
+            <mat-form-field>
+                <mat-label>Wybierz Wersję</mat-label>
+                <mat-select [(value)]="selected">
+                    <mat-option>Wybierz Wersję</mat-option>
+                    <mat-option *ngFor="let version of versions" [value]="version.url">{{ version.name }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <a href="{{ selected }}" style="text-decoration: none;"><button mat-raised-button>Go!</button></a>
         </div>
     </div>
 </div>

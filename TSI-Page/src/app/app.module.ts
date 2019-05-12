@@ -28,6 +28,7 @@ import { SelektorAtrybutu3Component } from './static/css/selektor-atrybutu3/sele
 import { MultimediaComponent } from './static/multimedia/multimedia.component';
 import { titleService } from './title.service';
 import { FormsModule } from '@angular/forms';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
-    titleService
+    titleService,
+    CookieService
   ],
   bootstrap: [AppComponent]
 })

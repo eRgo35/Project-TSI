@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { titleService } from './title.service';
-import { Observable } from 'rxjs';
+import { CookieService } from 'ngx-cookie-service';
 
 interface ROUTE {
   icon?: string;
@@ -16,10 +16,39 @@ interface ROUTE {
 export class AppComponent implements OnInit {
 
   title = '';
+  cookieValue = 'UNKNOWN';
 
-  constructor(private titleService: titleService) {}
+  constructor(private titleService: titleService, private cookieService: CookieService) { }
+
+  themeToggle = false;
+
+  changeTheme() {
+    
+    var wrap = document.getElementById('main_wrapper');
+
+    if (this.themeToggle === false) {
+      wrap.className = "dark-theme";
+      this.cookieService.set( 'theme', 'dark', 1337 );
+    }
+    else if (this.themeToggle === true) {
+      wrap.className = "light-theme";
+      this.cookieService.set( 'theme', 'light', 1337 );
+    }
+  }
 
   ngOnInit() {
+    this.cookieValue = this.cookieService.get('theme');
+    var wrap = document.getElementById('main_wrapper');
+    
+    if (this.cookieValue == "light") {
+      wrap.className = "light-theme";
+      this.themeToggle = false;
+    }
+    else if (this.cookieValue == "dark") {
+      wrap.className = "dark-theme";
+      this.themeToggle = true;
+    }
+  
     this.titleService.title.subscribe(updatedTitle => {
       this.title = updatedTitle;
     });
@@ -121,5 +150,14 @@ export class AppComponent implements OnInit {
       title: 'Multimedia',
     }, 
   ];
+
+  isLargeScreen() {
+    const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if (width > 720) {
+        return true;
+    } else {
+        return false;
+    }
+  }
 
 }

@@ -1,4 +1,4 @@
-<div class="normal">
+<div class="light-theme" id="main_wrapper">
 <mat-toolbar color="primary" fxLayoutAlign="space-between center" class="main">
   <div>
     <button class="title-button" mat-button routerLink="/">
@@ -7,11 +7,11 @@
     </button>
   </div>
   <div fxHide.lt-md>
-      <mat-slide-toggle class="theme">Dark theme</mat-slide-toggle>
+      <mat-slide-toggle (click)="changeTheme()" class="theme" [(ngModel)]="themeToggle">Dark theme</mat-slide-toggle>
   </div>
 </mat-toolbar>
 <mat-sidenav-container>
-  <mat-sidenav fxShow.gt-md #sidenav role="navigation" mode="side" opened="true">
+  <mat-sidenav #sidenav role="navigation" [mode]="isLargeScreen() ? 'side' : 'over'" [opened]="isLargeScreen()">
     <mat-nav-list>
       <mat-expansion-panel [expanded]=true>
         <mat-expansion-panel-header>
