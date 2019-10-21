@@ -48,7 +48,7 @@ const routes: Routes = [
   { path: 'css-basics/selektor-atrybutu-2', component: SelektorAtrybutu2Component },
   { path: 'css-basics/selektor-atrybutu-3', component: SelektorAtrybutu3Component },
   // ANIMATIONS URLS
-  { path: 'animations/windows-xp', component: WindowsXpComponent },
+  { path: 'animations/windows-xd', component: WindowsXpComponent },
   { path: 'animations/zulu', component: ZuluComponent },
   { path: 'animations/loading', component: LoadingComponent },
 ];

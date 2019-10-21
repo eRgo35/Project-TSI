@@ -153,8 +153,8 @@ export class AppComponent implements OnInit {
   Animations: ROUTE[] = [
     {
       icon: 'desktop_windows',
-      route: 'animations/windows-xp',
-      title: 'Windows XP',
+      route: 'animations/windows-xd',
+      title: 'Windows XD',
     }, 
     {
       icon: 'bubble_chart',

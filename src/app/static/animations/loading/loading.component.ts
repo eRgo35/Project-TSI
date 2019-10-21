@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { titleService } from '../../../title.service';
 
 @Component({
   selector: 'app-loading',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoadingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: titleService) { }
 
   ngOnInit() {
+    this.titleService.setTitle("Animacja Ładowania");
   }
 
 }

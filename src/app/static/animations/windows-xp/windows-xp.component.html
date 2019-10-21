@@ -54,15 +54,15 @@
         #boot::after {
             content: '|||||||||';
             text-align: center;
-            font-size: 7vh;
-            line-height: 0.5;
+            font-size: 5vh;
+            line-height: 0.1;
             width: 70px;
             height: 100%;
             background: rgb(1, 165, 1);
             position: absolute;
             top: 0;
             left: 0;
-            z-index: -1;
+            z-index: 1;
             animation: ladowanie 3s infinite linear;
         }
         #copy {
@@ -79,7 +79,7 @@
             100% { border-radius: 100%; }
         }
         @keyframes ladowanie {
-            0% { left: 0; }
+            0% { left: -100px; }
             100% { left: 300px; }
         }
     </style>
@@ -92,7 +92,7 @@
         <div id="square" class="fd" style="background-color: yellow;"></div>
     </div>
     <div>
-        <h1>Windows XP</h1>
+        <h1>Windows XD</h1>
     </div>
     <div id="boot-wrapper">
         <div id="boot"></div>
