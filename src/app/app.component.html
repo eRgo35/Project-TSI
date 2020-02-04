@@ -13,11 +13,14 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav role="navigation" [mode]="isLargeScreen() ? 'side' : 'over'" [opened]="isLargeScreen()">
     <mat-nav-list>
+      <div fxHide.gt-sm fxLayoutAlign="center center">
+        <mat-slide-toggle (click)="changeTheme()" [(ngModel)]="themeToggle" class="theme-mobile">Dark theme</mat-slide-toggle>
+      </div>
       <mat-expansion-panel [expanded]=true>
         <mat-expansion-panel-header>
           <h2 matSubheader>Podstawy HTML</h2>
         </mat-expansion-panel-header>
-        <a *ngFor="let item of HtmlBasics" mat-list-item (click)="sidenav.close()" [routerLink]="[item.route]"
+        <a *ngFor="let item of HtmlBasics" mat-list-item (click)="isLargeScreen() || sidenav.close()" [routerLink]="[item.route]"
           routerLinkActive="list-item-active">
           <mat-icon matListIcon> {{ item.icon }} </mat-icon>
           {{item.title}}
@@ -28,7 +31,7 @@
         <mat-expansion-panel-header>
           <h2 matSubheader>Podstawy CSS</h2>
         </mat-expansion-panel-header>
-        <a *ngFor="let item of CssBasics" mat-list-item (click)="sidenav.close()" [routerLink]="[item.route]"
+        <a *ngFor="let item of CssBasics" mat-list-item (click)="isLargeScreen() || sidenav.close()" [routerLink]="[item.route]"
           routerLinkActive="list-item-active">
           <mat-icon matListIcon> {{ item.icon }} </mat-icon>
           {{item.title}}
@@ -69,7 +72,7 @@
         <mat-expansion-panel-header>
           <h2 matSubheader>Animacje</h2>
         </mat-expansion-panel-header>
-        <a *ngFor="let item of Animations" mat-list-item (click)="sidenav.close()" [routerLink]="[item.route]"
+        <a *ngFor="let item of Animations" mat-list-item (click)="isLargeScreen() || sidenav.close()" [routerLink]="[item.route]"
           routerLinkActive="list-item-active">
           <mat-icon matListIcon> {{ item.icon }} </mat-icon>
           {{item.title}}
@@ -95,7 +98,7 @@
         <mat-expansion-panel-header>
           <h2 matSubheader>Multimedia</h2>
         </mat-expansion-panel-header>
-        <a *ngFor="let item of Multimedia" mat-list-item (click)="sidenav.close()" [routerLink]="[item.route]"
+        <a *ngFor="let item of Multimedia" mat-list-item (click)="isLargeScreen() || sidenav.close()" [routerLink]="[item.route]"
           routerLinkActive="list-item-active">
           <mat-icon matListIcon> {{ item.icon }} </mat-icon>
           {{item.title}}
