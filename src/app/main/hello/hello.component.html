@@ -1,0 +1,78 @@
+<div class="wrapper" fxFlex fxLayoutGap="40px" fxLayout="column">
+    <div>
+        <h1 style="color: #4285F4">H</h1>
+        <h1 style="color: #DB4437">e</h1>
+        <h1 style="color: #F4B400">l</h1>
+        <h1 style="color: #4285F4">l</h1>
+        <h1 style="color: #0F9D58">o</h1>
+        <h1>&nbsp;</h1>
+        <h1 style="color: #DB4437">W</h1>
+        <h1 style="color: #4285F4">o</h1>
+        <h1 style="color: #DB4437">r</h1>
+        <h1 style="color: #F4B400">l</h1>
+        <h1 style="color: #4285F4">d</h1>
+        <h1 style="color: #0F9D58">!</h1>
+        <br>
+
+        <h2>Witaj na mojej stronie! Znajdziesz tutaj wszystkie prace robione na przedmiocie TSI.</h2>
+    </div>
+    <div>
+        <h3>Linki</h3>
+        <div fxLayoutAlign="center center">
+            <mat-chip-list fxHide.lt-md>
+                <a style="text-decoration: none;" href="http://zspm.pl" target="_BLANK">
+                    <mat-chip style="cursor: pointer"><img src="../../../assets/pictures/zspm.png"
+                            width="20px">&nbsp;&nbsp;ZSPM</mat-chip>
+                </a>
+                <a style="text-decoration: none;" href="http://tsi-pai.cba.pl" target="_BLANK">
+                    <mat-chip style="cursor: pointer">
+                        <mat-icon>web</mat-icon>&nbsp;&nbsp;Strona TSI
+                    </mat-chip>
+                </a>
+                <a style="text-decoration: none;" href="https://mczyz.ml" target="_BLANK">
+                    <mat-chip style="cursor: pointer"><img src="../../../assets/hello/mike.jpg" width="20px"
+                            style="border-radius: 50%;">&nbsp;&nbsp;Michał Czyż</mat-chip>
+                </a>
+                <a style="text-decoration: none;" href="https://github.com/eRgo35" target="_BLANK">
+                    <mat-chip style="cursor: pointer">
+                        <i class="fab fa-github"></i>&nbsp;&nbsp;GitHub
+                    </mat-chip>
+                </a>
+            </mat-chip-list>
+        </div>
+        <div fxLayoutAlign="center center">
+                <mat-chip-list fxHide.gt-sm>
+                    <a style="text-decoration: none;" href="http://zspm.pl" target="_BLANK">
+                        <mat-chip style="cursor: pointer"><img src="../../../assets/pictures/zspm.png"
+                                width="20px"></mat-chip>
+                    </a>
+                    <a style="text-decoration: none;" href="http://tsi-pai.cba.pl" target="_BLANK">
+                        <mat-chip style="cursor: pointer">
+                            <mat-icon>web</mat-icon></mat-chip>
+                    </a>
+                    <a style="text-decoration: none;" href="https://michalczyz.ml" target="_BLANK">
+                        <mat-chip style="cursor: pointer"><img src="../../../assets/hello/mike.jpg" width="20px"
+                                style="border-radius: 50%;"></mat-chip>
+                    </a>
+                    <a style="text-decoration: none;" href="https://github.com/eRgo35" target="_BLANK">
+                        <mat-chip style="cursor: pointer">
+                            <i class="fab fa-github"></i></mat-chip>
+                    </a>
+                </mat-chip-list>
+            </div>
+    </div>
+    <div>
+        <h3>Michael's Time Machine&trade;</h3>
+        <div fxLayoutAlign="center center" fxLayoutGap="8px">
+            <mat-form-field>
+                <mat-label>Wybierz Wersję</mat-label>
+                <mat-select [(value)]="selected">
+                    <mat-option>Wybierz Wersję</mat-option>
+                    <mat-option *ngFor="let version of versions" [value]="version.url">{{ version.name }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <a href="{{ selected }}" style="text-decoration: none;"><button mat-raised-button>Go!</button></a>
+        </div>
+    </div>
+</div>

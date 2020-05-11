@@ -1,0 +1,13 @@
+<mat-sidenav-container style="height: calc(100vh - 56px);">
+    <mat-sidenav #sidenav role="navigation" mode="over" style="width: 250px; margin: 0; height: 100%;">
+        <app-menu-sm></app-menu-sm>
+    </mat-sidenav>
+    <app-header></app-header>
+    <div style="min-height: calc(100vh - 80px);">
+        <app-menu fxFlex.gt-sm="290px" fxHide.lt-md></app-menu>
+        <div style="margin: 25px 0;" fxFlex.gt-sm="calc(100% - 290px)" fxFlex.lt-md="100%">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</mat-sidenav-container>

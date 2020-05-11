@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/TSI-Page",
+    "public": "dist/Project-TSI-v4",
     "ignore": [
       "firebase.json",
       "**/.*",

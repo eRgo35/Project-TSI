@@ -1,0 +1,129 @@
+.menu {
+    margin: 25px;
+    position: relative;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #acacac;
+}
+
+.category-wrapper {
+    background-color: #f2f2f2;
+    max-height: 75vh;
+    overflow-x: auto;
+    position: sticky;
+    top: 25px;
+    left: 25px;
+    z-index: 0;
+    mat-list { 
+        padding: 0;
+    }
+    mat-icon {
+        position: absolute;
+        right: 5px;
+        font-size: 18px;
+    }
+    .cat-expander {
+        padding: 10px 15px;
+        font-weight: 700;
+        line-height: 16px;
+        margin: 0;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        position: relative;
+        height: 36px;
+        background: none;
+        border: none;
+        width: 100%;
+        text-align: left;
+        display: block;
+        font-family: Roboto, Helvetica Neue, sans-serif;
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+    mat-list-item, .mat-list-item {
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 12px;
+        cursor: pointer;
+        height: 40px;
+        font-family: Roboto, Helvetica Neue, sans-serif;
+        font-weight: 400;
+        background: none;
+        outline: none;
+        border: none;
+        &:hover {
+            background-color: #e6e6e6;
+            color: blue;
+        }
+        &:active {
+            outline: none;
+        }
+        &:focus {
+            outline: none;
+        }
+        text-decoration: none;
+    }
+    .list-item-active {
+        color: blue !important;
+        background-color: #e6e6e6 !important;
+    }
+    hr {
+        margin: 0;
+        padding: 0;
+        height: 1px;
+        border: none;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+}
+
+.dark-menu {
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.26);
+        }
+        .category-wrapper {
+            background-color: rgba(0, 0, 0, 0.2);
+            .cat-expander {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            mat-list-item, .mat-list-item {
+                color: white !important;
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.068) !important;
+                    color: lightblue !important;
+                }
+            }
+            .list-item-active {
+                color: lightblue !important;
+                background-color: rgba(0, 0, 0, 0.25) !important;
+            }
+            hr {
+                border-top: 1px solid rgba(0,0,0,.1);
+            }
+        }  
+}
+@media (min-width: 0px) and (max-width: 1024px) {
+    .menu {
+        margin: 0;
+    } 
+    .category-wrapper {
+        max-height: calc(100vh - 56px);
+        overflow-x: auto;
+        margin: 0;
+        top: 0;
+    }
+}

@@ -1,0 +1,8 @@
+<mat-toolbar color="primary" fxLayoutAlign="space-between center">
+  <button mat-button routerLink="/">
+    <i class="fas fa-file-code logo"></i>
+    <span class="title" (click)="title='Strona Główna'">Tworzenie Stron Internetowych</span>
+  </button>
+  <app-theme [options]="options$ | async" (themeChange)="themeChangeHandler($event)"></app-theme>
+
+</mat-toolbar>
