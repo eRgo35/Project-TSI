@@ -24,7 +24,7 @@ export class HelloComponent implements OnInit {
     {name: 'Wersja 1.5', url: 'https://tsi1.mczyz.ml/1.5'},
     {name: 'Wersja 2.0.26', url: 'https://tsi2.mczyz.ml'},
     {name: 'Wersja 3.1.2', url: 'https://tsi3.mczyz.ml'},
-    {name: 'Wersja 4.0.0', url: '/'}
+    {name: 'Wersja 4.0.2', url: '/'}
   ];
 
   selected = '';

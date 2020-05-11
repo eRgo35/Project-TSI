@@ -27,64 +27,64 @@ export class MenuSmComponent implements OnInit {
     this.wrapperComponent.sidenav.close();
   }
 
-  toggleMenuHTML() {
-    if (document.getElementById("html-icon").innerHTML == "keyboard_arrow_up") {
-      document.getElementById("cat-html").style.display = "none";
-      document.getElementById("html-icon").innerHTML = "keyboard_arrow_down";
+  toggleSmMenuHTML() {
+    if (document.getElementById("html-icon-sm").innerHTML == "keyboard_arrow_up") {
+      document.getElementById("cat-sm-html").style.display = "none";
+      document.getElementById("html-icon-sm").innerHTML = "keyboard_arrow_down";
     }
     else {
-      document.getElementById("cat-html").style.display = "block";
-      document.getElementById("html-icon").innerHTML = "keyboard_arrow_up";
+      document.getElementById("cat-sm-html").style.display = "block";
+      document.getElementById("html-icon-sm").innerHTML = "keyboard_arrow_up";
     }
   }
-  toggleMenuCSS() {
-    if (document.getElementById("css-icon").innerHTML == "keyboard_arrow_up") {
-      document.getElementById("cat-css").style.display = "none";
-      document.getElementById("css-icon").innerHTML = "keyboard_arrow_down";
+  toggleSmMenuCSS() {
+    if (document.getElementById("css-icon-sm").innerHTML == "keyboard_arrow_up") {
+      document.getElementById("cat-sm-css").style.display = "none";
+      document.getElementById("css-icon-sm").innerHTML = "keyboard_arrow_down";
     }
     else {
-      document.getElementById("cat-css").style.display = "block";
-      document.getElementById("css-icon").innerHTML = "keyboard_arrow_up";
+      document.getElementById("cat-sm-css").style.display = "block";
+      document.getElementById("css-icon-sm").innerHTML = "keyboard_arrow_up";
     }
   }
-  toggleMenuHTML5() {
-    if (document.getElementById("html5-icon").innerHTML == "keyboard_arrow_up") {
-      document.getElementById("cat-html5").style.display = "none";
-      document.getElementById("html5-icon").innerHTML = "keyboard_arrow_down";
+  toggleSmMenuHTML5() {
+    if (document.getElementById("html5-icon-sm").innerHTML == "keyboard_arrow_up") {
+      document.getElementById("cat-sm-html5").style.display = "none";
+      document.getElementById("html5-icon-sm").innerHTML = "keyboard_arrow_down";
     }
     else {
-      document.getElementById("cat-html5").style.display = "block";
-      document.getElementById("html5-icon").innerHTML = "keyboard_arrow_up";
+      document.getElementById("cat-sm-html5").style.display = "block";
+      document.getElementById("html5-icon-sm").innerHTML = "keyboard_arrow_up";
     }
   }
-  toggleMenuAnim() {
-    if (document.getElementById("anim-icon").innerHTML == "keyboard_arrow_up") {
-      document.getElementById("cat-anim").style.display = "none";
-      document.getElementById("anim-icon").innerHTML = "keyboard_arrow_down";
+  toggleSmMenuAnim() {
+    if (document.getElementById("anim-icon-sm").innerHTML == "keyboard_arrow_up") {
+      document.getElementById("cat-sm-anim").style.display = "none";
+      document.getElementById("anim-icon-sm").innerHTML = "keyboard_arrow_down";
     }
     else {
-      document.getElementById("cat-anim").style.display = "block";
-      document.getElementById("anim-icon").innerHTML = "keyboard_arrow_up";
+      document.getElementById("cat-sm-anim").style.display = "block";
+      document.getElementById("anim-icon-sm").innerHTML = "keyboard_arrow_up";
     }
   }
-  toggleMenuDocs() {
-    if (document.getElementById("docs-icon").innerHTML == "keyboard_arrow_up") {
-      document.getElementById("cat-docs").style.display = "none";
-      document.getElementById("docs-icon").innerHTML = "keyboard_arrow_down";
+  toggleSmMenuDocs() {
+    if (document.getElementById("docs-icon-sm").innerHTML == "keyboard_arrow_up") {
+      document.getElementById("cat-sm-docs").style.display = "none";
+      document.getElementById("docs-icon-sm").innerHTML = "keyboard_arrow_down";
     }
     else {
-      document.getElementById("cat-docs").style.display = "block";
-      document.getElementById("docs-icon").innerHTML = "keyboard_arrow_up";
+      document.getElementById("cat-sm-docs").style.display = "block";
+      document.getElementById("docs-icon-sm").innerHTML = "keyboard_arrow_up";
     }
   }
-  toggleMenuMulti() {
-    if (document.getElementById("multi-icon").innerHTML == "keyboard_arrow_up") {
-      document.getElementById("cat-multi").style.display = "none";
-      document.getElementById("multi-icon").innerHTML = "keyboard_arrow_down";
+  toggleSmMenuMulti() {
+    if (document.getElementById("multi-icon-sm").innerHTML == "keyboard_arrow_up") {
+      document.getElementById("cat-sm-multi").style.display = "none";
+      document.getElementById("multi-icon-sm").innerHTML = "keyboard_arrow_down";
     }
     else {
-      document.getElementById("cat-multi").style.display = "block";
-      document.getElementById("multi-icon").innerHTML = "keyboard_arrow_up";
+      document.getElementById("cat-sm-multi").style.display = "block";
+      document.getElementById("multi-icon-sm").innerHTML = "keyboard_arrow_up";
     }
   }
 

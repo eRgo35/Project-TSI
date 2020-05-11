@@ -1,61 +1,61 @@
 <div id="menu-box-sm" class="menu">
     <div class="category-wrapper">
       <mat-list>
-        <button class="cat-expander" (click)="toggleMenuHTML()">
+        <button class="cat-expander" (click)="toggleSmMenuHTML()">
             Podstawy HTML
-            <mat-icon id="html-icon">keyboard_arrow_up</mat-icon>
+            <mat-icon id="html-icon-sm">keyboard_arrow_up</mat-icon>
         </button>
-        <div id="cat-html" class="category-links">
+        <div id="cat-sm-html" class="category-links">
           <button mat-list-item matRipple (click)="closeMenuMobile()" *ngFor="let item of HtmlBasics" class="item" [routerLink]="[item.route]" routerLinkActive="list-item-active">{{ item.title }}</button>
         </div>
         <hr>
       </mat-list>
       <mat-list>
-        <button class="cat-expander" (click)="toggleMenuCSS()">
+        <button class="cat-expander" (click)="toggleSmMenuCSS()">
             Podstawy CSS
-            <mat-icon id="css-icon">keyboard_arrow_up</mat-icon>
+            <mat-icon id="css-icon-sm">keyboard_arrow_up</mat-icon>
         </button>
-        <div id="cat-css" class="category-links">
+        <div id="cat-sm-css" class="category-links">
           <button mat-list-item matRipple (click)="closeMenuMobile()" *ngFor="let item of CssBasics" class="item" [routerLink]="[item.route]" routerLinkActive="list-item-active">{{ item.title }}</button>
         </div>
         <hr>
       </mat-list>
       <mat-list>
-        <button class="cat-expander" (click)="toggleMenuHTML5()">
+        <button class="cat-expander" (click)="toggleSmMenuHTML5()">
             Strony HTML5
-            <mat-icon id="html5-icon">keyboard_arrow_up</mat-icon>
+            <mat-icon id="html5-icon-sm">keyboard_arrow_up</mat-icon>
         </button>
-        <div id="cat-html5" class="category-links">
+        <div id="cat-sm-html5" class="category-links">
           <button mat-list-item matRipple (click)="closeMenuMobile()" *ngFor="let item of Html5Pages" class="item" [routerLink]="[item.route]" routerLinkActive="list-item-active">{{ item.title }}</button>
         </div>
         <hr>
       </mat-list>
       <mat-list>
-        <button class="cat-expander" (click)="toggleMenuAnim()">
+        <button class="cat-expander" (click)="toggleSmMenuAnim()">
             Animacje
-            <mat-icon id="anim-icon">keyboard_arrow_up</mat-icon>
+            <mat-icon id="anim-icon-sm">keyboard_arrow_up</mat-icon>
         </button>
-        <div id="cat-anim" class="category-links">
+        <div id="cat-sm-anim" class="category-links">
           <button mat-list-item matRipple (click)="closeMenuMobile()" *ngFor="let item of Animations" class="item" [routerLink]="[item.route]" routerLinkActive="list-item-active">{{ item.title }}</button>
         </div>
         <hr>
       </mat-list>
       <mat-list>
-        <button class="cat-expander" (click)="toggleMenuDocs()">
+        <button class="cat-expander" (click)="toggleSmMenuDocs()">
             Dokumenty
-            <mat-icon id="docs-icon">keyboard_arrow_up</mat-icon>
+            <mat-icon id="docs-icon-sm">keyboard_arrow_up</mat-icon>
         </button>
-        <div id="cat-docs" class="category-links">
+        <div id="cat-sm-docs" class="category-links">
           <a target="_BLANK" [href]="item.route" *ngFor="let item of Documents" class="item" mat-list-item>{{ item.title }}</a>
         </div>
         <hr>
       </mat-list>
       <mat-list>
-        <button class="cat-expander" (click)="toggleMenuMulti()">
+        <button class="cat-expander" (click)="toggleSmMenuMulti()">
             Multimedia
-            <mat-icon id="multi-icon">keyboard_arrow_up</mat-icon>
+            <mat-icon id="multi-icon-sm">keyboard_arrow_up</mat-icon>
         </button>
-        <div id="cat-multi" class="category-links">
+        <div id="cat-sm-multi" class="category-links">
           <button mat-list-item matRipple (click)="closeMenuMobile()" *ngFor="let item of Multimedia" class="item" [routerLink]="[item.route]" routerLinkActive="list-item-active">{{ item.title }}</button>
         </div>
         <hr>
