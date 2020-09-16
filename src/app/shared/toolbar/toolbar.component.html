@@ -1,8 +1,24 @@
 <mat-toolbar color="primary" fxLayoutAlign="space-between center">
   <button mat-button routerLink="/">
     <i class="fas fa-file-code logo"></i>
-    <span class="title" (click)="title='Strona Główna'">Tworzenie Stron Internetowych</span>
+    <span class="title" fxHide.lt-lg (click)="title='Strona Główna'">Tworzenie Stron Internetowych</span>
+    <span class="title" fxHide.gt-md (click)="title='Strona Główna'">TSI</span>
   </button>
-  <app-theme [options]="options$ | async" (themeChange)="themeChangeHandler($event)"></app-theme>
-
+  <div fxLayoutAlign="center center">
+    <button mat-button matTooltip="Wybierz wersję" [matMenuTriggerFor]="versionPicker">
+      4.1.0
+      <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+    <mat-menu #versionPicker="matMenu">
+      <button mat-menu-item *ngFor="let version of versions" (click)="onVersionChanged(version.url)">{{ version.name }}</button>
+    </mat-menu>
+    <app-theme [options]="options$ | async" (themeChange)="themeChangeHandler($event)"></app-theme>
+    <a fxHide.lt-lg mat-button href="https://github.com/eRgo35/Project-TSI">
+      <img class="github" src="../../../assets/github.svg" alt="Project-TSI">
+      GitHub
+    </a>
+    <a fxHide.gt-md mat-button href="https://github.com/eRgo35/Project-TSI">
+      <img class="github" src="../../../assets/github.svg" alt="Project-TSI">
+    </a>
+  </div>
 </mat-toolbar>

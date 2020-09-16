@@ -1,10 +1,43 @@
-h1 {
-    font-size: 40pt;
-    display: inline;
+#hello {
+    font-size: 18px;
 }
-
-div.wrapper {
-    margin: 20px 0 0;
-    text-align: center;
-    height: calc(100vh - 100px);
+#hello-sm {
+    margin: 0 40px;
+}
+#pages {
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+}
+.page {
+    width: 280px;
+    height: 260px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 4px;
+    margin: 20px;
+}
+.page:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.048);
+}
+.page:active {
+    outline: none;
+}
+.card-img {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    min-height: 158px;
+    min-width: 100%;
+}
+mat-icon {
+    font-size: 150px;
+    width: 150px;
+    height: 100%;
+}
+.card-h1 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px 15px;
+}
+.card-more {
+    font-size: 15px;
+    margin: 15px;
 }

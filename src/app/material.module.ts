@@ -11,7 +11,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatRippleModule } from '@angular/material/core';
-
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   declarations: [],
   imports: [
@@ -27,6 +28,8 @@ import { MatRippleModule } from '@angular/material/core';
     MatSelectModule,
     MatMenuModule,
     MatRippleModule,
+    MatTabsModule,
+    MatTooltipModule
   ],
   exports: [
     MatButtonModule,
@@ -41,6 +44,8 @@ import { MatRippleModule } from '@angular/material/core';
     MatSelectModule,
     MatMenuModule,
     MatRippleModule,
+    MatTabsModule,
+    MatTooltipModule
   ],
 })
 export class MaterialModule { }

@@ -46,6 +46,27 @@ import { ThemeService } from './shared/theme/theme.service';
 import { HttpClientModule } from '@angular/common/http';
 import { StyleManagerService } from './shared/theme/style-manager.service';
 import { SidenavService } from './shared/services/sidenav.service';
+import { NauczycieleSourceComponent } from './source-code/basics/html/nauczyciele-source/nauczyciele-source.component';
+import { ZdjeciaSourceComponent } from './source-code/basics/html/zdjecia-source/zdjecia-source.component';
+import { FormularzSourceComponent } from './source-code/basics/html/formularz-source/formularz-source.component';
+import { FormularzSprSourceComponent } from './source-code/basics/html/formularz-spr-source/formularz-spr-source.component';
+import { ListySourceComponent } from './source-code/basics/html/listy-source/listy-source.component';
+import { ListySprSourceComponent } from './source-code/basics/html/listy-spr-source/listy-spr-source.component';
+import { TabelaSourceComponent } from './source-code/basics/html/tabela-source/tabela-source.component';
+import { TabelaSprSourceComponent } from './source-code/basics/html/tabela-spr-source/tabela-spr-source.component';
+import { WlasciwosciCssSourceComponent } from './source-code/basics/css/wlasciwosci-css-source/wlasciwosci-css-source.component';
+import { KlasaIdentyfikatorSourceComponentComponent } from './source-code/basics/css/klasa-identyfikator-source-component/klasa-identyfikator-source-component.component';
+import { TabeleCssSourceComponentComponent } from './source-code/basics/css/tabele-css-source-component/tabele-css-source-component.component';
+import { PseudoelementySourceComponentComponent } from './source-code/basics/css/pseudoelementy-source-component/pseudoelementy-source-component.component';
+import { PseudoelementyBasnSourceComponentComponent } from './source-code/basics/css/pseudoelementy-basn-source-component/pseudoelementy-basn-source-component.component';
+import { SelektorElementuSourceComponentComponent } from './source-code/basics/css/selektor-elementu-source-component/selektor-elementu-source-component.component';
+import { SelektorAtrybutu2SourceComponentComponent } from './source-code/basics/css/selektor-atrybutu2-source-component/selektor-atrybutu2-source-component.component';
+import { SelektorAtrybutu3SourceComponentComponent } from './source-code/basics/css/selektor-atrybutu3-source-component/selektor-atrybutu3-source-component.component';
+import { SelektorAtrybutu1SourceComponentComponent } from './source-code/basics/css/selektor-atrybutu1-source-component/selektor-atrybutu1-source-component.component';
+import { WindowsXpSourceComponentComponent } from './source-code/basics/animations/windows-xp-source-component/windows-xp-source-component.component';
+import { ZuluSourceComponentComponent } from './source-code/basics/animations/zulu-source-component/zulu-source-component.component';
+import { LoadingSourceComponentComponent } from './source-code/basics/animations/loading-source-component/loading-source-component.component';
+import { MultimediaSourceComponentComponent } from './source-code/basics/html/multimedia-source-component/multimedia-source-component.component';
 
 
 @NgModule({
@@ -86,7 +107,28 @@ import { SidenavService } from './shared/services/sidenav.service';
     Pozycjonowanie1Component,
     Pozycjonowanie2Component,
     Pozycjonowanie3Component,
-    MenuSmComponent
+    MenuSmComponent,
+    NauczycieleSourceComponent,
+    ZdjeciaSourceComponent,
+    FormularzSourceComponent,
+    FormularzSprSourceComponent,
+    ListySourceComponent,
+    ListySprSourceComponent,
+    TabelaSourceComponent,
+    TabelaSprSourceComponent,
+    WlasciwosciCssSourceComponent,
+    KlasaIdentyfikatorSourceComponentComponent,
+    TabeleCssSourceComponentComponent,
+    PseudoelementySourceComponentComponent,
+    PseudoelementyBasnSourceComponentComponent,
+    SelektorElementuSourceComponentComponent,
+    SelektorAtrybutu2SourceComponentComponent,
+    SelektorAtrybutu3SourceComponentComponent,
+    SelektorAtrybutu1SourceComponentComponent,
+    WindowsXpSourceComponentComponent,
+    ZuluSourceComponentComponent,
+    LoadingSourceComponentComponent,
+    MultimediaSourceComponentComponent,
   ],
   imports: [
     BrowserModule,
