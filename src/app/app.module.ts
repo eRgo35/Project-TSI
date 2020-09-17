@@ -55,18 +55,19 @@ import { ListySprSourceComponent } from './source-code/basics/html/listy-spr-sou
 import { TabelaSourceComponent } from './source-code/basics/html/tabela-source/tabela-source.component';
 import { TabelaSprSourceComponent } from './source-code/basics/html/tabela-spr-source/tabela-spr-source.component';
 import { WlasciwosciCssSourceComponent } from './source-code/basics/css/wlasciwosci-css-source/wlasciwosci-css-source.component';
-import { KlasaIdentyfikatorSourceComponentComponent } from './source-code/basics/css/klasa-identyfikator-source-component/klasa-identyfikator-source-component.component';
-import { TabeleCssSourceComponentComponent } from './source-code/basics/css/tabele-css-source-component/tabele-css-source-component.component';
-import { PseudoelementySourceComponentComponent } from './source-code/basics/css/pseudoelementy-source-component/pseudoelementy-source-component.component';
-import { PseudoelementyBasnSourceComponentComponent } from './source-code/basics/css/pseudoelementy-basn-source-component/pseudoelementy-basn-source-component.component';
-import { SelektorElementuSourceComponentComponent } from './source-code/basics/css/selektor-elementu-source-component/selektor-elementu-source-component.component';
-import { SelektorAtrybutu2SourceComponentComponent } from './source-code/basics/css/selektor-atrybutu2-source-component/selektor-atrybutu2-source-component.component';
-import { SelektorAtrybutu3SourceComponentComponent } from './source-code/basics/css/selektor-atrybutu3-source-component/selektor-atrybutu3-source-component.component';
-import { SelektorAtrybutu1SourceComponentComponent } from './source-code/basics/css/selektor-atrybutu1-source-component/selektor-atrybutu1-source-component.component';
-import { WindowsXpSourceComponentComponent } from './source-code/basics/animations/windows-xp-source-component/windows-xp-source-component.component';
-import { ZuluSourceComponentComponent } from './source-code/basics/animations/zulu-source-component/zulu-source-component.component';
-import { LoadingSourceComponentComponent } from './source-code/basics/animations/loading-source-component/loading-source-component.component';
-import { MultimediaSourceComponentComponent } from './source-code/basics/html/multimedia-source-component/multimedia-source-component.component';
+import { KlasaIdentyfikatorSourceComponent } from './source-code/basics/css/klasa-identyfikator-source/klasa-identyfikator-source.component';
+import { TabeleCssSourceComponent } from './source-code/basics/css/tabele-css-source/tabele-css-source.component';
+import { PseudoelementySourceComponent } from './source-code/basics/css/pseudoelementy-source/pseudoelementy-source.component';
+import { PseudoelementyBasnSourceComponent } from './source-code/basics/css/pseudoelementy-basn-source/pseudoelementy-basn-source.component';
+import { SelektorElementuSourceComponent } from './source-code/basics/css/selektor-elementu-source/selektor-elementu-source.component';
+import { SelektorAtrybutu2SourceComponent } from './source-code/basics/css/selektor-atrybutu2-source/selektor-atrybutu2-source.component';
+import { SelektorAtrybutu3SourceComponent } from './source-code/basics/css/selektor-atrybutu3-source/selektor-atrybutu3-source.component';
+import { SelektorAtrybutu1SourceComponent } from './source-code/basics/css/selektor-atrybutu1-source/selektor-atrybutu1-source.component';
+import { WindowsXpSourceComponent } from './source-code/basics/animations/windows-xp-source/windows-xp-source.component';
+import { ZuluSourceComponent } from './source-code/basics/animations/zulu-source/zulu-source.component';
+import { LoadingSourceComponent } from './source-code/basics/animations/loading-source/loading-source.component';
+import { MultimediaSourceComponent } from './source-code/basics/html/multimedia-source/multimedia-source.component';
+import { MenuComponent5 } from './html5/menu/menu.component';
 
 
 @NgModule({
@@ -117,18 +118,19 @@ import { MultimediaSourceComponentComponent } from './source-code/basics/html/mu
     TabelaSourceComponent,
     TabelaSprSourceComponent,
     WlasciwosciCssSourceComponent,
-    KlasaIdentyfikatorSourceComponentComponent,
-    TabeleCssSourceComponentComponent,
-    PseudoelementySourceComponentComponent,
-    PseudoelementyBasnSourceComponentComponent,
-    SelektorElementuSourceComponentComponent,
-    SelektorAtrybutu2SourceComponentComponent,
-    SelektorAtrybutu3SourceComponentComponent,
-    SelektorAtrybutu1SourceComponentComponent,
-    WindowsXpSourceComponentComponent,
-    ZuluSourceComponentComponent,
-    LoadingSourceComponentComponent,
-    MultimediaSourceComponentComponent,
+    KlasaIdentyfikatorSourceComponent,
+    TabeleCssSourceComponent,
+    PseudoelementySourceComponent,
+    PseudoelementyBasnSourceComponent,
+    SelektorElementuSourceComponent,
+    SelektorAtrybutu2SourceComponent,
+    SelektorAtrybutu3SourceComponent,
+    SelektorAtrybutu1SourceComponent,
+    WindowsXpSourceComponent,
+    ZuluSourceComponent,
+    LoadingSourceComponent,
+    MultimediaSourceComponent,
+    MenuComponent5
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-selektor-atrybutu3-source-component',
+  selector: 'app-selektor-atrybutu3-source',
   template: `
     <p>
       selektor-atrybutu3-source-component works!
@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class SelektorAtrybutu3SourceComponentComponent implements OnInit {
+export class SelektorAtrybutu3SourceComponent implements OnInit {
 
   constructor() { }
 

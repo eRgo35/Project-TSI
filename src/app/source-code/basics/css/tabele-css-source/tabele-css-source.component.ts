@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-multimedia-source-component',
+  selector: 'app-tabele-css-source',
   template: `
     <p>
-      multimedia-source-component works!
+      tabele-css-source-component works!
     </p>
   `,
   styles: [
   ]
 })
-export class MultimediaSourceComponentComponent implements OnInit {
+export class TabeleCssSourceComponent implements OnInit {
 
   constructor() { }
 

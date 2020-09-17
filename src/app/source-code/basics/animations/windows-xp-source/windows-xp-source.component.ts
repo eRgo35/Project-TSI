@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-zulu-source-component',
+  selector: 'app-windows-xp-source',
   template: `
     <p>
-      zulu-source-component works!
+      windows-xp-source-component works!
     </p>
   `,
   styles: [
   ]
 })
-export class ZuluSourceComponentComponent implements OnInit {
+export class WindowsXpSourceComponent implements OnInit {
 
   constructor() { }
 

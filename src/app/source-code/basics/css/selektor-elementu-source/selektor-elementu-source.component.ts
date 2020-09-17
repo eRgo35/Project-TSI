@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-windows-xp-source-component',
+  selector: 'app-selektor-elementu-source',
   template: `
     <p>
-      windows-xp-source-component works!
+      selektor-elementu-source-component works!
     </p>
   `,
   styles: [
   ]
 })
-export class WindowsXpSourceComponentComponent implements OnInit {
+export class SelektorElementuSourceComponent implements OnInit {
 
   constructor() { }
 

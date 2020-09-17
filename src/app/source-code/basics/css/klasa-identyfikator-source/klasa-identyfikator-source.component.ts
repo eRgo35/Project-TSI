@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-klasa-identyfikator-source-component',
+  selector: 'app-klasa-identyfikator-source',
   template: `
     <p>
       klasa-identyfikator-source-component works!
@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class KlasaIdentyfikatorSourceComponentComponent implements OnInit {
+export class KlasaIdentyfikatorSourceComponent implements OnInit {
 
   constructor() { }
 

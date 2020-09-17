@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-pseudoelementy-source-component',
+  selector: 'app-pseudoelementy-source',
   template: `
     <p>
       pseudoelementy-source-component works!
@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class PseudoelementySourceComponentComponent implements OnInit {
+export class PseudoelementySourceComponent implements OnInit {
 
   constructor() { }
 

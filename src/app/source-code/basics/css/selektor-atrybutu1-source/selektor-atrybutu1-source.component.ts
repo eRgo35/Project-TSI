@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-loading-source-component',
+  selector: 'app-selektor-atrybutu1-source',
   template: `
     <p>
-      loading-source-component works!
+      selektor-atrybutu1-source-component works!
     </p>
   `,
   styles: [
   ]
 })
-export class LoadingSourceComponentComponent implements OnInit {
+export class SelektorAtrybutu1SourceComponent implements OnInit {
 
   constructor() { }
 

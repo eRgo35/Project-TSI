@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tabele-css-source-component',
+  selector: 'app-zulu-source',
   template: `
     <p>
-      tabele-css-source-component works!
+      zulu-source-component works!
     </p>
   `,
   styles: [
   ]
 })
-export class TabeleCssSourceComponentComponent implements OnInit {
+export class ZuluSourceComponent implements OnInit {
 
   constructor() { }
 
