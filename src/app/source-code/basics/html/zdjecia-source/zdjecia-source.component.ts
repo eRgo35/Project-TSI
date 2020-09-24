@@ -21,7 +21,7 @@ export class ZdjeciaSourceComponent implements OnInit, AfterViewInit {
     this.titleService.setTitle("Nauczyciele");
   }
 
-  gistUrl = "https://gist.github.com/eRgo35/57c872565cbf2a467bfbdadad380e635.js";
+  gistUrl = "https://gist.github.com/eRgo35/d339e98c4fdc4777d2fb986c08133930.js";
 
   ngAfterViewInit() {
     const doc = this.iframe.nativeElement.contentDocument || this.iframe.nativeElement.contentElement.contentWindow;

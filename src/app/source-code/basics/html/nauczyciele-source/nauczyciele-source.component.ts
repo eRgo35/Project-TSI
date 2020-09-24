@@ -6,7 +6,7 @@ import { TitleService } from 'src/app/shared/services/title.service';
   template: `
   <mat-tab-group mat-align-tabs="start">
     <mat-tab label="HTML">
-      <iframe #iframe scrolling="no" style="border: none; width: 100%; height: 100vh;" type="text/javascript"></iframe>
+      <iframe #iframe scrolling="no" style="border: none; width: 100%; height: 140vh;" type="text/javascript"></iframe>
     </mat-tab>
   </mat-tab-group>
   `
@@ -21,7 +21,7 @@ export class NauczycieleSourceComponent implements OnInit, AfterViewInit {
     this.titleService.setTitle("Nauczyciele");
   }
 
-  gistUrl = "";
+  gistUrl = "https://gist.github.com/eRgo35/3e563d70a6054827a692c7290640bffe.js";
 
   ngAfterViewInit() {
     const doc = this.iframe.nativeElement.contentDocument || this.iframe.nativeElement.contentElement.contentWindow;
