@@ -52,6 +52,7 @@ import { WindowsXpSourceComponent } from './source-code/basics/animations/window
 import { ZuluSourceComponent } from './source-code/basics/animations/zulu-source/zulu-source.component';
 import { LoadingSourceComponent } from './source-code/basics/animations/loading-source/loading-source.component';
 import { MultimediaSourceComponent } from './source-code/basics/html/multimedia-source/multimedia-source.component';
+import { FourOFourComponent } from './main/four-o-four/four-o-four.component';
 // import { Uklad1SourceComponent } from './source-code/html5/uklad1/uklad1.component';
 // import { Uklad2SourceComponent } from './source-code/html5/uklad2/uklad2.component';
 // import { ZwierzetaSourceComponent } from './source-code/html5/zwierzeta/zwierzeta.component';
@@ -133,6 +134,8 @@ const routes: Routes = [
   // { path: 'html5/pozycjonowanie1/code', component: Pozycjonowanie1SourceComponent },
   // { path: 'html5/pozycjonowanie2/code', component: Pozycjonowanie2SourceComponent },
   // { path: 'html5/pozycjonowanie3/code', component: Pozycjonowanie3SourceComponent },
+  { path: '404', component: FourOFourComponent },
+  { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({

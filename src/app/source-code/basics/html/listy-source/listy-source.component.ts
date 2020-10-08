@@ -8,7 +8,7 @@ import { TitleService } from 'src/app/shared/services/title.service';
   template: `
   <mat-tab-group mat-align-tabs="start">
     <mat-tab label="HTML">
-      <iframe #iframe scrolling="no" style="border: none; width: 100%; height: 220vh;" type="text/javascript"></iframe>
+      <iframe #iframe onload="resizeIframe(this)" style="border: none; width: 100%;" type="text/javascript"></iframe>
     </mat-tab>
   </mat-tab-group>
   `
@@ -20,7 +20,7 @@ export class ListySourceComponent implements OnInit {
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle("Nauczyciele");
+    this.titleService.setTitle("Listy (Kod źródłowy)");
   }
 
   gistUrl = "https://gist.github.com/eRgo35/174388e5113bf926be828595042998a6.js";

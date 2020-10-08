@@ -68,6 +68,7 @@ import { ZuluSourceComponent } from './source-code/basics/animations/zulu-source
 import { LoadingSourceComponent } from './source-code/basics/animations/loading-source/loading-source.component';
 import { MultimediaSourceComponent } from './source-code/basics/html/multimedia-source/multimedia-source.component';
 import { MenuComponent5 } from './html5/menu/menu.component';
+import { FourOFourComponent } from './main/four-o-four/four-o-four.component';
 
 
 @NgModule({
@@ -130,7 +131,8 @@ import { MenuComponent5 } from './html5/menu/menu.component';
     ZuluSourceComponent,
     LoadingSourceComponent,
     MultimediaSourceComponent,
-    MenuComponent5
+    MenuComponent5,
+    FourOFourComponent
   ],
   imports: [
     BrowserModule,

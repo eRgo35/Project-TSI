@@ -1,4 +1,4 @@
-<mat-toolbar color="primary" class="sub">
+<mat-toolbar color="primary" class="sub" *ngIf="!(title == '')" >
     <header fxLayout="row" fxLayoutAlign="space-between center">
       <div id="left" fxLayoutAlign="start center">
       <button mat-icon-button fxHide.gt-sm (click)="toggleSidenav()">
@@ -6,7 +6,7 @@
       </button>
       <h1>{{ title }}</h1>
       </div>
-      <button *ngIf="!(title == 'Strona Główna')" matTooltip="Pokaż/Ukryj Kod" mat-icon-button (click)="onViewCode()">
+      <button *ngIf="!(title == 'Strona Główna' || title == '')" matTooltip="Pokaż/Ukryj Kod" mat-icon-button (click)="onViewCode()">
         <mat-icon>code</mat-icon>
       </button>
     </header>

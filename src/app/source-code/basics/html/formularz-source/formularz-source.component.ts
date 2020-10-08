@@ -8,7 +8,7 @@ import { TitleService } from 'src/app/shared/services/title.service';
   template: `
   <mat-tab-group mat-align-tabs="start">
     <mat-tab label="HTML">
-      <iframe #iframe scrolling="no" style="border: none; width: 100%; height: 460vh;" type="text/javascript"></iframe>
+      <iframe #iframe onload="resizeIframe(this)" style="border: none; width: 100%;" type="text/javascript"></iframe>
     </mat-tab>
   </mat-tab-group>
   `
@@ -20,7 +20,7 @@ export class FormularzSourceComponent implements OnInit {
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle("Nauczyciele");
+    this.titleService.setTitle("Formularz (Kod źródłowy)");
   }
 
   gistUrl = "https://gist.github.com/eRgo35/5c56dd22f1b1f27ffc2f2ac5e70ff42b.js";

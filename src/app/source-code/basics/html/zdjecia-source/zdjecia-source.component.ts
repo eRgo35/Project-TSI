@@ -6,7 +6,7 @@ import { TitleService } from 'src/app/shared/services/title.service';
   template: `
   <mat-tab-group mat-align-tabs="start">
     <mat-tab label="HTML">
-      <iframe #iframe scrolling="no" style="border: none; width: 100%; height: 100vh;" type="text/javascript"></iframe>
+      <iframe #iframe onload="resizeIframe(this)" style="border: none; width: 100%;" type="text/javascript"></iframe>
     </mat-tab>
   </mat-tab-group>
   `
@@ -18,7 +18,7 @@ export class ZdjeciaSourceComponent implements OnInit, AfterViewInit {
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle("Nauczyciele");
+    this.titleService.setTitle("Zdjęcia (Kod źródłowy)");
   }
 
   gistUrl = "https://gist.github.com/eRgo35/d339e98c4fdc4777d2fb986c08133930.js";

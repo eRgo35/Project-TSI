@@ -5,7 +5,6 @@
   <!-- Metas -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#3f51b5">
   <!--Facebook Open Graph-->
   <meta property="og:title" content="Tworzenie Stron Internetowych" />
   <meta property="og:description" content="Strona ze wszystkimi pracami stworzonymi na przedmiocie TSI." />
@@ -16,11 +15,15 @@
   <meta property="og:locale" content="pl_PL">
   <!--Twitter card metadata-->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@MIKE_3RG0" />
-  <meta name="twitter:creator" content="@MIKE_3RG0" />
+  <meta name="twitter:site" content="@Mike_Czyz" />
+  <meta name="twitter:creator" content="@Mike_Czyz" />
   <meta name="twitter:title" content="Tworzenie Stron Internetowych" />
   <meta name="twitter:description" content="Strona ze wszystkimi pracami stworzonymi na przedmiocie TSI." />
   <meta name="twitter:image" content="https://tsi.mczyz.ml/assets/site-preview.png">
+  
+  <!-- Base -->
+  <base href="/">
+
   <!-- Links -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -38,11 +41,15 @@
 
   <link id="themeAsset" rel="stylesheet" href="assets/themes/indigo-pink.css">
 
-  <!-- Base -->
-  <base href="/">
-
   <!-- Title -->
   <title>Tworzenie Stron Internetowych</title>
+
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
+
 </head>
 
 <body id="theme-body">
