@@ -6,7 +6,7 @@
       </button>
       <h1>{{ title }}</h1>
       </div>
-      <button *ngIf="!(title == 'Strona Główna' || title == '')" matTooltip="Pokaż/Ukryj Kod" mat-icon-button (click)="onViewCode()">
+      <button *ngIf="!(title == 'Strona Główna' || title == '' || title == 'Układ 1' || title == 'Układ 2' || title == 'Zwierzęta' || title == 'Galeria' || title == 'Menu' || title == 'Pozycjonowanie 1' || title == 'Pozycjonowanie 2' || title == 'Pozycjonowanie 3')" matTooltip="Pokaż/Ukryj Kod" mat-icon-button (click)="onViewCode()">
         <mat-icon>code</mat-icon>
       </button>
     </header>
