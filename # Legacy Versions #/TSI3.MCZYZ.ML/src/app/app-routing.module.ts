@@ -53,4 +53,8 @@ const routes: Routes = [
   { path: 'animations/loading', component: LoadingComponent },
 ];
 
-export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes);
+@NgModule({
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
