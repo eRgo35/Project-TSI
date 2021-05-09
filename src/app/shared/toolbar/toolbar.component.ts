@@ -28,11 +28,11 @@ export class ToolbarComponent implements OnInit {
   }
 
   versions: Version[] = [
-    {name: '1.1', url: 'https://tsi1.mczyz.ml/1.1'},
-    {name: '1.5', url: 'https://tsi1.mczyz.ml/1.5'},
-    {name: '2.0.26', url: 'https://tsi2.mczyz.ml'},
-    {name: '3.1.2', url: 'https://tsi3.mczyz.ml'},
-    {name: '4.1.0', url: '/'}
+    {name: '1.1', url: 'https://tsi1.mczyz.icu/1.1'},
+    {name: '1.5', url: 'https://tsi1.mczyz.icu/1.5'},
+    {name: '2.1.0', url: 'https://tsi2.mczyz.icu'},
+    {name: '3.1.3', url: 'https://tsi3.mczyz.icu'},
+    {name: '4.1.1', url: 'https://tsi.mczyz.icu'}
   ];
   
   onVersionChanged(version) {
